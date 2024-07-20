@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  math_operations:
+    build: .
+    command: ["python", "-m", "unittest", "discover", "-s", "tests"]
+    volumes:
+      - .:/app
